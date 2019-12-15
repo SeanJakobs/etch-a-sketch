@@ -1,8 +1,8 @@
-const body = document.querySelector('body');
+const container = document.getElementById('container');
 const prompt = 5;
 
 for ( i = 0; i < prompt; i++){
     let div = document.createElement('div');
-    body.appendChild(div);
+    container.appendChild(div);
 }
 
