@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+
+#container {
+    width: 100%;
+    /* height: auto; */
+}
+
+.gridDiv {
+    float: left;
+    margin: 0 auto;
+    width: 33.33%
+    height: 100px;
+    /* padding: 50px; */
+    background-color: pink;
+}
