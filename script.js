@@ -7,3 +7,9 @@ for ( i = 0; i < prompt; i++){
     container.appendChild(div);
 }
 
+let gridDiv = document.querySelector('.gridDiv');
+gridDiv.addEventListener('mouseover', alertFunction);
+
+function alertFunction() {
+    alert("hi")
+}
