@@ -4,12 +4,10 @@ const prompt = 256;
 for ( i = 0; i < prompt; i++){
     let div = document.createElement('div');
     div.setAttribute('class', 'gridDiv');
+    div.addEventListener('mouseover', blockSelected);
     container.appendChild(div);
 }
 
-let gridDiv = document.querySelector('.gridDiv');
-gridDiv.addEventListener('mouseover', alertFunction);
-
-function alertFunction() {
-    alert("hi")
+function blockSelected() {
+    this.classList.add('block-selected');
 }
