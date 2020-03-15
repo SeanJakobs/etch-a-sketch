@@ -2,10 +2,6 @@ const container = document.getElementById('container');
 const row = document.getElementsByClassName('gridRow');
 let gridSize = 16;
 
-
-
-
-
 function createRow() {
     for ( i = 0; i < gridSize; i++){
         let div = document.createElement('div');

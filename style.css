@@ -3,15 +3,28 @@
   }
 
 #container {
-    display: flex;
+    margin: 25px 20%;
+    width: 60%;
+    height: 650px;
     background-color: pink;
-    flex-wrap: wrap;
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.gridDiv {
+.gridRow {
     margin: 0 auto;
-    width: 6.25%;
-    height: 50px;
+    width: 100%;
+    /* flex: 1 0 auto; */
+    height: auto;
+    overflow:hidden;
+    display: flex;
+    flex-flow: column wrap;
+}
+.gridDiv {
+    margin: 0 0;
+    width: auto;
+    /* flex: 1 0 auto; */
+    height: 100%;
 }
 
 .block-selected {
