@@ -42,7 +42,7 @@ function clearGrid() {
 }
 
 function resizeGrid(){
-    gridSize = prompt('How many squares per side?');
+    gridSize = prompt('How many blocks per side?');
     clearGrid();
 }
 
