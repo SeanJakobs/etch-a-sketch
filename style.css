@@ -9,15 +9,16 @@ body {
 h1 {
 
     font-family: 'Kaushan Script', cursive;
-    font-size: 140px;
+    font-size: 100px;
     margin: 0 auto;
     
 }
 
 #container {
-    margin: 110px 20% 50px 20%;
-    width: 60%;
-    height: 650px;
+    margin: 95px 30% 50px 30%;
+    width: 40%;
+    /* max-width: 650px; */
+    height: 475px;
     background-color: pink;
     display: flex;
     flex-flow: row wrap;
