@@ -42,7 +42,15 @@ function clearGrid() {
 }
 
 function resizeGrid(){
+    let previousGridSize = gridSize;
     gridSize = prompt('How many blocks per side?');
+    if (gridSize === null){
+        return;
+    }
+    else if (gridSize > 128){
+        alert("That's too high! try using a number 128 or less");
+        gridSize = previousGridSize;
+    }
     clearGrid();
 }
 
