@@ -15,9 +15,8 @@ h1 {
 }
 
 #container {
-    margin: 95px 30% 50px 30%;
-    width: 40%;
-    /* max-width: 650px; */
+    margin: 95px auto 50px auto;
+    width: 600px;
     height: 475px;
     background-color: pink;
     display: flex;
