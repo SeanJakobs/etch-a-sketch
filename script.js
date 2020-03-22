@@ -45,14 +45,26 @@ function resizeGrid(){
     let previousGridSize = gridSize;
     gridSize = prompt('How many blocks per side?');
     if (gridSize === null){
+        gridSize = previousGridSize;
+        return;}
+    gridSize = Number(gridSize);
+    if (gridSize <= 0){
+        alert("Please enter a number greater than 0");
+        gridSize = previousGridSize;
         return;
-    }
-    else if (gridSize > 128){
+    } else if ((typeof(gridSize) !== 'number') 
+    || (Boolean(gridSize) === false)){
+        alert("Please enter a number");
+        gridSize = previousGridSize;
+            return;
+    } else if (gridSize > 128){
         alert("That's too high! try using a number 128 or less");
         gridSize = previousGridSize;
+        return;
     }
     clearGrid();
 }
+
 
 function blockSelected() {
     this.classList.add('block-selected');
